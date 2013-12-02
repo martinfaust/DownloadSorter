@@ -10,7 +10,7 @@ if platform.system() != 'Darwin':
 	print "sorry, only mac supported"
 	exit(2)
 
-down_folder = "/Users/martinfaust/Downloads/"
+down_folder = "%s/Downloads/" % os.path.expanduser("~")
 
 def parse_output(inps):
 	"""parses the mdsl output and returns the domain from where a certain file was downloaded"""
